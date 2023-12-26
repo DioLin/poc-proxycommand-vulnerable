@@ -6,7 +6,7 @@ Use of tokens like %h, %p in `ProxyCommand` is quite popular to use tunnels and 
 
 ```
 host *.example.com
-  ProxyCommand /usr/bin/nc -X connect -x 192.0.2.0:8080 %h %p
+  ProxyCommand /usr/bin/nc -X connect -x 192.168.2.123:8087 %h %p
 ```
 
 Note: in my initial assessment I was under the impression that using '%h` (single quotes) would avoid this, but looks like that is still going to be vulnerable with something like:
@@ -23,8 +23,8 @@ A submodule which would exploit this vulnerability to pop a calculator on OSX.
 
 Try it out using:
 
-`git clone https://github.com/vin01/poc-proxycommand-vulnerable --recurse-submodules`
+`git clone https://github.com/DioLin/poc-proxycommand-vulnerable --recurse-submodules`
 
 or
 
-`git clone git@github.com:vin01/poc-proxycommand-vulnerable.git --recurse-submodules`
+`git clone git@github.com:DioLin/poc-proxycommand-vulnerable.git --recurse-submodules`
